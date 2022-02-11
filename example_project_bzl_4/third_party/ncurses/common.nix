@@ -2,7 +2,7 @@
 
 let 
   ncursesStatic = pkgs.ncurses.overrideAttrs (oldAttrs: rec {
-    enableStatic = true;
+    enableStatic = false;
 
     configureFlags = [
       (lib.withFeature (!enableStatic) "shared")

@@ -3,8 +3,8 @@
 let
   readlineStatic = pkgs.readline81.overrideAttrs (oldAttrs: rec {
     configureFlags = [
-      "--enable-static"
-      "--disable-shared"
+#      "--enable-static"
+#      "--disable-shared"
     ];
 
     # static build, so don't need ncurses

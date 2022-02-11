@@ -1,0 +1,7 @@
+#!/nix/store/ghxfazmq9ahsh0s58mw8ij2962jmg7k7-bash/bin/bash
+
+(
+  printf 'Bazel does not yet support protobuf compiling.\n'
+) >&2
+
+exit 1

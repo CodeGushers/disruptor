@@ -9,5 +9,6 @@ cc_binary(
     ]),
     deps = [
       "//third_party/readline",
-    ]
+    ],
+    linkopts = ["-Wl,-rpath=$$ORIGIN"],
 )
